@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #D3B2F8;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* logo */
+.caja-logo {
+    width: 980px;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.img-logo{
+    border-radius: 50%;
+    width: 35px;
+}
+/* logo */
+
+
+/* nav animacion y transicion */
+.nav{
+    display:inline-block;
+    /* margin:0.4em;  padding:1em; */
+    cursor:pointer;
+    background:#EBCEF2;  color:#fff;
+}
+.nav:hover{
+    animation: pulse 0.3s linear 1;
+}
+
+@keyframes nav{
+    50%  {transform: scale(0.8);}
+}
+/* nav animacion y transicion */
+
+
+/* header */
+header {
+    margin-bottom: 40px;
+}
+
+.titulo-h1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titulo-h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.caja-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E9DBF8;
+    height: 30px;
+    align-items: center;
+}
+
+.nav {
+    list-style-type: none;
+    text-decoration: none;
+
+
+}
+
+.link-nav{
+    text-decoration: none;
+    color: #000;
+
+}
+
+/* fin header */
+
+/* main */ 
+
+/* animacion y transicion cards 1 */
+.card{
+    display:block;
+    margin:20px auto 0px;
+    height: 300px;
+    width:auto;
+    animation: 3s infinite alternate floating;
+}
+.shadow{
+    height:2px;
+    display:block;
+    margin:15px auto;
+    animation: 3s infinite alternate shadow;
+}
+
+@keyframes floating {
+    0% {
+    transform: translatey(0px);
+    }
+    50% {
+    transform: translatey(-10px);
+    }
+    100% {
+    transform: translatey(0px);
+    }
+}
+@keyframes shadow {
+    0% { 
+    width:180px;
+    box-shadow:0px 10px 8px rgba(0,0,0,.8);
+    }
+    50% {
+    width:150px;
+    box-shadow:0px 10px 8px rgba(0,0,0,.5);
+    }
+    100% {
+    width:180px;
+    box-shadow:0px 10px 8px rgba(0,0,0,.8);
+    }
+}
+/* animacion y transicion cards 1 */
+
+.contenedor{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+
+}
+.columna1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.columna2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.uno{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.img{
+    width: 250px;
+    height: 250px; 
+}
+
+
+.promo-card{
+    background-color: #D3B2F8;
+    width: 400px;
+    height: 400px;
+    background-color: #EBCEF2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* animacion y transicion cards 2  */
+
+.img{
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/* animacion y transicion cards 2 */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-gap: 2rem;
+    height: 720px;
+    width: 1280px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: #EBCEF2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.img-newin {
+    border-radius: 1rem;
+    opacity: 80%;
+}
+
+.boton {
+    padding: 0.5rem 3rem;
+    background-color: #DDAEEA;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.boton:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.container-inicio {
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    width: 1280px;
+    height: 720px;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card-inicio {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-image: linear-gradient(rgba(0,0,0,0.445), rgba(0,0,0,0.411)), url(../imagenes/conjunto-sally.jpg);
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.title-card-inicio {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* fin del main */
+
+/* footer */
+
+footer {
+    background-color: #E9DBF8;
+    width: 100%;
+    position:fixed;
+    bottom: 0%;
+    width: 1500px;
+    height: 45px;
+    
+}
+
+.container-redes{
+    display: flex;
+    width: 1500px;
+    height: 45px;
+    margin:auto;
+} 
+.caja-redes{
+    width: 1500px;
+    height: 45px;
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    gap: 80px;  
+}
+.icon {
+    background-color:#DDAEEA;
+    border-radius: 50%;
+}
+
+.redes {
+    list-style-type: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* animacion y transicion cards footer */
+.pulse {
+    margin:100px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background:#DDAEEA;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(200, 123, 228, 0.4);
+    animation: pulse 2s infinite;
+}.pulse:hover {
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 44, 183, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px #b72ccc00;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(199, 65, 188, 0);
+    }
+}
+/* animacion y transicion cards footer */
+
+/* fin del footer */
